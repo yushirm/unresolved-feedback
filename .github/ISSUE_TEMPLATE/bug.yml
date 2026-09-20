@@ -1,0 +1,64 @@
+name: Bug report
+description: Report something that did not work as expected in the public beta.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve UNRESOLVED.
+
+        **Please do not include personal, confidential or sensitive information. This issue will be public.**
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      description: Briefly describe the problem.
+      placeholder: The Continue control stopped responding after…
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Tell us what you saw and what you were doing immediately beforehand.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the result you expected instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: How often has this happened?
+      options:
+        - Every time
+        - More than once
+        - Once
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Approximate chapter or location (optional)
+      description: Avoid spoilers in the issue title; a broad location is enough.
+      placeholder: Prologue, Reading Settings, Chapter 3…
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device (optional)
+      description: Include only details you are comfortable posting publicly.
+      placeholder: Firefox on Android; Safari on iPhone…
+  - type: textarea
+    id: details
+    attributes:
+      label: Screenshot or additional details (optional)
+      description: You may attach a screenshot, but check it for private information first. Do not upload a save unless you deliberately want its story progress to be public.
+
