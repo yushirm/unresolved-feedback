@@ -1,0 +1,41 @@
+name: General feedback
+description: Share what worked, what was confusing, or what could improve.
+title: "[Feedback]: "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for spending time with the UNRESOLVED beta.
+
+        **Please do not include personal, confidential or sensitive information. This issue will be public.**
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked well?
+      description: Tell us what felt clear, useful or memorable.
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What was confusing or difficult?
+      description: Interface, reading flow, balance, presentation and accessibility feedback are all useful.
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggestions
+      description: What would you change or refine?
+  - type: input
+    id: context
+    attributes:
+      label: Beta or build context (optional)
+      description: If visible in the game, include a short build ID or broad chapter/location. Do not post a private save or diagnostic unless you deliberately choose to make its contents public.
+      placeholder: Build abc123; Chapter 2; phone layout…
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public tracker acknowledgement
+      options:
+        - label: I have not included personal, confidential or sensitive information.
+          required: true
+
